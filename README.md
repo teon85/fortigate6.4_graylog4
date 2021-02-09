@@ -12,9 +12,12 @@ Setup Notes
 Input is for FortiGate Firewall with Raw/Plaintext UDP.
 
 Import the Content Pack
+
 Update the search,alert,stream and dashboard rule with your device gl2_source_input serial.
+
 Point FortiGate syslog to Graylog with cli command :
-  config log syslogd setting
+
+	config log syslogd setting
 		set status enable
 		set server "172.30.1.7"
 		set port 1500
